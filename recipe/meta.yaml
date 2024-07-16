@@ -25,7 +25,7 @@ requirements:
   run:
     - python >=3.8.1,<4.0.0
     - setuptools >=68.2.2
-    - pkg-about >=1.1.5
+    - pkg-about >=1.1.7
 
 test:
   imports:
