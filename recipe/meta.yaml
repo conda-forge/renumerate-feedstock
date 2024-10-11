@@ -16,16 +16,16 @@ build:
 
 requirements:
   host:
-    - python >=3.8.1,<4.0.0
-    - setuptools >=68.2.2
-    - wheel >=0.42.0
-    - packaging >=23.2.0
-    - tox >=4.11.3
+    - python >=3.9.0,<4.0.0
+    - setuptools >=75.1.0
+    - wheel >=0.44.0
+    - packaging >=24.1.0
+    - tox >=4.21.2
     - pip
   run:
-    - python >=3.8.1,<4.0.0
-    - setuptools >=68.2.2
-    - pkg-about >=1.2.0
+    - python >=3.9.0,<4.0.0
+    - setuptools >=75.1.0
+    - pkg-about >=1.2.1
 
 test:
   imports:
