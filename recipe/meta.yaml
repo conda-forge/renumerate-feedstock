@@ -1,6 +1,6 @@
 {% set python_min = python_min|default("0.1a0") %}
 {% set name = "renumerate" %}
-{% set version = "1.2.2" %}
+{% set version = "1.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/renumerate-{{ version }}.zip
-  sha256: ac0fa491d02d6116b3376c5e86f93a5e7d8423fb42a7c0ba64299dd22c1a00c1
+  sha256: 98805446a560b419c120fb2eef9b85ebaf6a5d091a5f49a192780ebe0b692c38
 
 build:
   noarch: python
