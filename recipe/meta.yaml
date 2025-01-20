@@ -1,5 +1,5 @@
 {% set name = "renumerate" %}
-{% set version = "1.2.4" %}
+{% set version = "1.2.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 730c93a3f925804bf527582f322fe39868c86a52f30a0b58969e74685c2737a6
+  sha256: 361fd871ee0224fb402b16def6b05bba2a899645317ab3210f20406c1b793531
 
 build:
   noarch: python
