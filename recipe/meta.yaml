@@ -19,12 +19,12 @@ requirements:
     - python {{ python_min }}
     - setuptools >=75.8.0
     - packaging >=24.2.0
-    - tox >=4.23.2
+    - tox >=4.24.1
     - pip
   run:
     - python >={{ python_min }}
     - setuptools >=75.8.0
-    - pkg-about >=1.2.7
+    - pkg-about >=1.2.8
 test:
   imports:
     - renumerate
