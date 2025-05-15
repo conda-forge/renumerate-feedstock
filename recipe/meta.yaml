@@ -17,14 +17,15 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=75.8.0
+    - setuptools >=77.0.3
     - packaging >=24.2.0
-    - tox >=4.24.1
+    - tox >=4.24.2
     - pip
   run:
     - python >={{ python_min }}
-    - setuptools >=75.8.0
-    - pkg-about >=1.2.9
+    - setuptools >=77.0.3
+    - pkg-about >=1.2.11
+
 test:
   imports:
     - renumerate
