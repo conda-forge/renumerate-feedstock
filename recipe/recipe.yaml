@@ -1,0 +1,49 @@
+schema_version: 1
+
+context:
+  name: renumerate
+  version: 1.3.3
+  python_min: 3.10
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: ff07d9db027b173fb84c1cd14f3df5fa41391634a9e0801535997fca277fa74a
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}*
+    - setuptools >=80.7.1
+    - packaging >=25.0.0
+    - tox >=4.26.0
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - setuptools >=80.7.1
+    - pkg-about >=1.3.5
+
+tests:
+  - python:
+      imports:
+        - renumerate
+      pip_check: true
+      python_version: ${{ python_min }}.*
+
+about:
+  summary: Reverse enumerate.
+  license: Zlib
+  license_file: LICENSE
+  homepage: https://github.com/karpierz/renumerate
+  documentation: https://renumerate.readthedocs.io/
+
+extra:
+  recipe-maintainers:
+    - thewchan
