@@ -20,7 +20,7 @@ build:
 
 requirements:
   host:
-    - python ${{ python_min }}*
+    - python ${{ python_min }}.*
     - setuptools >=80.9.0
     - packaging >=25.0.0
     - tox >=4.26.0
