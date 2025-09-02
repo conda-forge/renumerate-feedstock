@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: renumerate
   version: "1.5.0"
-  python_min: '3.10'
 
 package:
   name: ${{ name|lower }}
@@ -23,7 +22,7 @@ requirements:
     - python ${{ python_min }}.*
     - setuptools >=80.9.0
     - packaging >=25.0.0
-    - tox >=4.26.0
+    - tox >=4.29.0
     - pip
   run:
     - python >=${{ python_min }}
