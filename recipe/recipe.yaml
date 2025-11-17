@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: renumerate
-  version: "2.0.1"
+  version: "2.0.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 6cc945c39276a0f8ce583239ac06b271f5281947bca9632a4ffc6c8290e1b06c
+  sha256: 8cc0bcb2869e48412f6d8d0ff220cfce09168f85c225dcdaabcd7d98bed568a8
 
 build:
   number: 0
