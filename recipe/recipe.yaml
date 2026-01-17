@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: renumerate
-  version: "2.0.8"
+  version: "2.0.11"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: a909ff98593b99a03a3feaedea9097749368ad3205f1122c43c9672dfefba4ff
+  sha256: 7af99add42b1cae82b8bb403e9b44bd53d4b122aa23cdab542b18e4c0f174521
 
 build:
   number: 0
@@ -22,7 +22,6 @@ requirements:
     - python ${{ python_min }}.*
     - setuptools >=80.9.0
     - packaging >=25.0.0
-    - tox >=4.32.0
     - pip
   run:
     - python >=${{ python_min }}
