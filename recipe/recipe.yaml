@@ -3,6 +3,7 @@ schema_version: 1
 context:
   name: renumerate
   version: "2.4.2"
+  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
@@ -27,7 +28,7 @@ requirements:
     - python >=${{ python_min }}
     - setuptools >=81.0.0
     - typing_extensions >=4.15.0
-    - pkg-about >=2.3.0
+    - pkg-about >=2.4.0
 
 tests:
   - python:
