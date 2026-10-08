@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: renumerate
-  version: "2.4.5"
+  version: "2.4.6"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 6d2c16c893276bfec6c1f84d4c81e8353fb1cbd7c2bd1d4941c9f772cb5e0dd9
+  sha256: 12bb7b30381e8d69e82c97dd822a1cf73dc8d40f0bf0dcd14bceb117dfc8fd66
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - typing_extensions >=4.16.0
-    - pkg-about >=2.4.5
+    - pkg-about >=2.4.6
 
 tests:
   - python:
