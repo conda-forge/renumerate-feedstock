@@ -26,7 +26,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - typing_extensions >=4.16.0
-    - pkg-about >=2.4.5
+    - pkg-about >=2.4.6
 
 tests:
   - python:
